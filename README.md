@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Python Essential Training: Build and Troubleshoot Python Scripts
+This is the repository for the LinkedIn Learning course `Python Essential Training: Build and Troubleshoot Python Scripts`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
