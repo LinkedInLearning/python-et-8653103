@@ -1,4 +1,5 @@
 {
+  "image": "mcr.microsoft.com/devcontainers/anaconda:3",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -8,7 +9,15 @@
     "vscode": {
       // Set *default* container specific settings.json values on container create.
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/bash",
+        // Auto-select the base conda interpreter so users don't pick a kernel
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "jupyter.kernels.filter": [
+          {
+            "path": "/opt/conda/bin/python",
+            "type": "pythonEnvironment"
+          }
+        ]
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
