@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/anaconda:3",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -7,30 +7,18 @@
       ]
     },
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
-        // Auto-select the base conda interpreter so users don't pick a kernel
-        "python.defaultInterpreterPath": "/opt/conda/bin/python",
-        "jupyter.kernels.filter": [
-          {
-            "path": "/opt/conda/bin/python",
-            "type": "pythonEnvironment"
-          }
-        ]
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
       },
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "linkedinlearning.linkedinlearning-vscode-theme",
         "ms-toolsai.jupyter",
         "ms-python.python"
-        // Additional Extensions Here
       ]
     }
   },
-  // Update welcome text and set terminal prompt to '$ '
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  // Pull all branches
+  "onCreateCommand": "pip install jupyter ipywidgets matplotlib numpy pandas requests python-dotenv openai Pillow && echo PS1='\"$ \"' >> ~/.bashrc",
   "postAttachCommand": "git pull --all"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
