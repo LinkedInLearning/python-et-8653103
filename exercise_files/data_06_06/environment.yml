@@ -1,0 +1,9 @@
+name: data-science-env
+dependencies:
+  - python=3.13
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - jupyter
+
