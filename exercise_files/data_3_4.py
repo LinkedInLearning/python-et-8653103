@@ -1,18 +1,15 @@
 """
-For more information, see
-https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt
-
-AWND = Average daily wind speed (tenths of meters per second)
-PRCP = Precipitation (tenths of mm)
-SNOW = Snowfall (mm)
-SNWD = Snow depth (mm)
-TMAX = Maximum temperature (tenths of degrees C)
-TMIN = Minimum temperature (tenths of degrees C)
+AWND = Average daily wind speed (mph)
+PRCP = Precipitation (inches)
+SNOW = Snowfall (inches)
+SNWD = Snow depth (inches)
+TMAX = Maximum temperature (degrees F)
+TMIN = Minimum temperature (degrees F)
 WDF1 = Direction of fastest 1-minute wind (degrees)
 WDF5 = Direction of fastest 5-second wind (degrees)
-WSF1 = Fastest 1-minute wind speed (tenths of meters per second)
-WSF5 = Fastest 5-second wind speed (tenths of meters per second)
-AWND = Average daily wind speed (tenths of meters per second)
+WSF1 = Fastest 1-minute wind speed (mph)
+WSF5 = Fastest 5-second wind speed (mph)
+AWND = Average daily wind speed (mph)
 WT** = Weather Type where ** has one of the following values:
     01 = Fog, ice fog, or freezing fog (may include heavy fog)
     02 = Heavy fog or heaving freezing fog (not always 
