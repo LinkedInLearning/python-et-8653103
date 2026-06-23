@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -9,7 +9,13 @@
     "vscode": {
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
-        "python.defaultInterpreterPath": "/usr/local/bin/python"
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.kernels.filter": [
+          {
+            "path": "/usr/local/bin/python",
+            "type": "pythonEnvironment"
+          }
+        ]
       },
       "extensions": [
         "linkedinlearning.linkedinlearning-vscode-theme",
@@ -18,7 +24,7 @@
       ]
     }
   },
-  "onCreateCommand": "pip install jupyter ipywidgets matplotlib numpy pandas requests python-dotenv openai Pillow && echo PS1='\"$ \"' >> ~/.bashrc",
+  "onCreateCommand": "pip install jupyter ipykernel ipywidgets matplotlib numpy pandas requests python-dotenv openai Pillow && python -m ipykernel install --user --name python3 --display-name 'Python 3' && echo PS1='\"$ \"' >> ~/.bashrc",
   "postAttachCommand": "git pull --all"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
