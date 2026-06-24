@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 
 USERNAME = "ryan"
-PASSWORD = "2Cool4Java!"
+PASSWORD = "snake"
 
 def get_grid_points(latitude, longitude):
     url = f"https://api.weather.gov/points/{latitude},{longitude}"
@@ -57,7 +57,6 @@ def auth(username, password):
         return False
     return True
 
-asdf
 
 username = input("username: ")
 password = input("password: ")
@@ -74,4 +73,4 @@ else:
     raise Exception()
 
 
-# 42.4025077778, -71.122014925
+# 42.4108682, -71.1204441

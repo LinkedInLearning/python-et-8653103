@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 USERNAME = "ryan"
-PASSWORD = "2Cool4Java!"
+PASSWORD = "snake"
 
 class AuthError(Exception):
     pass

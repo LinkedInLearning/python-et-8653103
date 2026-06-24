@@ -1,3 +1,13 @@
+"""
+logging.basicConfig(
+    filename='app.log', 
+    filemode='a',
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+logger = logging.getLogger(__name__)
+"""
+
 import requests
 from datetime import datetime
 import time
