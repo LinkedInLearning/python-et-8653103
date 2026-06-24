@@ -218,5 +218,21 @@ tmax_data = [
     }
 ]
 
-for measurement in tmax_data:
-    print(f"{measurement["date"]}: {measurement["value"]} degrees F")
+month_list = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+def format_date(date):
+  date = date.split("T")[0]
+  date_parts = date.split("-")
+  year = date_parts[0]
+  month = int(date_parts[1])
+  day = int(date_parts[2])
+  return f"{day} of {month_list[month - 1]}, {year}"
+
+# On July 7, 2025 it was 90.0 degrees Fahrenheit
+def format_tmax_measurement(measurement):
+  date = measurement["date"]
+  temp = measurement["value"]
+  return f"On {format_date(date)} it was {temp} degrees Fahrenheit"
+
+
+print(format_tmax_measurement(tmax_data[6]))
