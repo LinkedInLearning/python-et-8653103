@@ -11,3 +11,9 @@ def parse_dates(object):
 
 data = json.loads(json_data, object_hook=parse_dates)
 print(data)
+
+"""
+header 1, header 2, header 3
+some string, 123, 456
+another string, 987, 654
+"""
