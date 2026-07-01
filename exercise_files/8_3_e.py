@@ -10,7 +10,7 @@ def parse_dates(object):
     return object
 
 data = json.loads(json_data, object_hook=parse_dates)
-#print(data)
+print(data)
 
 
 def dates_to_str(obj):
@@ -18,4 +18,4 @@ def dates_to_str(obj):
 		return obj.isoformat()
 	return obj
 
-print(json.dumps(data, default=lambda o: o.isoformat() if isinstance(o, datetime) else o ))
+#print(json.dumps(data, default=lambda o: o.isoformat() if isinstance(o, datetime) else o ))
