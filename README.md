@@ -17,8 +17,7 @@ Some files will have a beginning and an end state. These are marked with the let
 
 ## Instructor
 
-Ryan Mitchell
-Principal Software Engineer at GLG
+Ryan Mitchell, Principal Software Engineer at GLG
 
 Ryan Mitchell is the author of Unlocking Python (Wiley, 2025) and Web Scraping with Python (O'Reilly, 2024). She has six LinkedIn Learning courses, including the popular Python course Python Essential Training. An expert in web scraping, application security, and data science, Ryan has hosted workshops and spoken at many events, including Data Day Texas and DEF CON.
 
